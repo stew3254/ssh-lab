@@ -50,7 +50,7 @@ resource "lxd_network" "ssh_upstream" {
     "dns.domain" = "ssh"
     "ipv4.address" = "10.100.0.1/24"
     "ipv4.nat" = "true"
-    "ipv6.address" = ""
+    #"ipv6.address" = ""
   }
 }
 
@@ -61,7 +61,7 @@ resource "lxd_network" "ssh_net0" {
     "ipv4.address" = "10.100.10.254/24"
     "ipv4.dhcp.gateway" = "10.100.10.1"
     "ipv4.nat" = "false"
-    "ipv6.address" = ""
+    #"ipv6.address" = ""
   }
 }
 
@@ -72,6 +72,6 @@ resource "lxd_network" "ssh_net1" {
     "ipv4.address" = "10.100.11.254/24"
     "ipv4.dhcp.gateway" = "10.100.11.1"
     "ipv4.nat" = "false"
-    "ipv6.address" = ""
+    #"ipv6.address" = ""
   }
 }

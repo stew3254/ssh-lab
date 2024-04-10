@@ -1,0 +1,8 @@
+#cloud-config
+package_update: true
+#package_upgrade: true
+#package_reboot_if_required: true
+packages:
+  - git
+ssh_authorized_keys:
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPqOQWYp60R4t6j0kZ25N/SZgrHY7WsikhBC5vIo9tJy VMs

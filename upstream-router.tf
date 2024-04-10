@@ -14,6 +14,7 @@ resource "lxd_profile" "upstream_router" {
     type = "nic"
     properties = {
       network = lxd_network.ssh_upstream.name
+      "ipv4.address" = "10.100.0.2"
     }
   }
 
